@@ -49,13 +49,13 @@ def BuildData():
     # min_known_neighbors = 1
 
     # Slightly harder problem (also from the paper)
-    
+
     table_capacity = 2
     min_known_neighbors = 1
 
     # Connection matrix: who knows who, and how strong
     # is the relation
-    df = pd.read_csv('../data/input/affinity.csv', sep=';')
+    df = pd.read_csv('./data/input/affinity.csv', sep=';')
     C = df.to_numpy()
 
     num_tables = int((len(df) / 2) + 1)
